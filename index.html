@@ -111,10 +111,12 @@
 
   <!-- WORK -->
   <section id="work" class="work">
-    <h2 class="section-title"><span class="sticker yellow">selected work</span></h2>
+    <h2 class="section-title"><span class="sticker yellow">three case studies</span></h2>
+    <p class="work-intro">Three projects, told the honest way: what the problem was, what boxed us in, what we tried, what broke, and what we did about it.</p>
 
     <!-- HOLLOWS -->
     <article class="proj red">
+      <span class="kind">flagship</span>
       <div class="proj-media">
         <div class="screen">
           <div class="screen-bar"><span>hollows.exe</span><span>▢ ✕</span></div>
@@ -127,22 +129,31 @@
         <p class="meta"><span>2025–26</span><span>team of 6</span><span>C++20 · CMake</span></p>
         <h3>Hollows</h3>
         <p>
-          A Windows game running on our own engine. No Unity and no Unreal, everything down to the
-          math library (vectors, 3×3 matrices). I was project manager, one of the programmers, and
-          the person the team came to for UX and design calls.
+          A Windows game running on our own engine, written from scratch in C++, right down to the
+          math library (vectors and 3×3 matrices). I was project manager and one of the programmers,
+          and I also took on the UX and design decisions for the team.
         </p>
-        <p class="proud">The parts I'm proudest of:</p>
+        <p class="proud">What I built:</p>
         <ul class="checks">
           <li>Enemy AI built on finite state machines with A* pathfinding</li>
           <li>Collectibles and the inventory system</li>
-          <li>A JSON-driven event system, so designers could change gameplay events without waiting on a recompile</li>
+          <li>A JSON-driven event system, so gameplay events could change without a recompile</li>
         </ul>
         <a class="watch" href="https://youtu.be/bxp67jQr5Dw" target="_blank" rel="noopener">▶ watch on YouTube</a>
       </div>
+      <ol class="case">
+        <li><b>The problem</b>Our team had no UX or game design (UXGD) student, so nobody owned design. Every decision about levels, pacing and player feel had to come from programmers.</li>
+        <li><b>The constraint</b>Five programmers and one artist, one academic year, and an engine we had to build ourselves before we could build the game on top of it.</li>
+        <li><b>What we tested</b>We prototyped enemy movement in a 2D test build, trying A* pathfinding on the level grid to see how enemies chased and navigated around the player.</li>
+        <li class="fail"><b>What failed</b>Finding the best pathfinding for the enemies took far longer than planned. We kept iterating and couldn't land on a setup that was both efficient and fun to play against.</li>
+        <li><b>What we changed</b>We cut the scope. Instead of a large game, we focused on making three levels that were well designed and polished.</li>
+        <li><b>What happened</b>Communication carried us. With no designer, we talked through every design call as a team, and we shipped a complete three-level game on our own engine.</li>
+      </ol>
     </article>
 
     <!-- EDUVISION -->
     <article class="proj green flip">
+      <span class="kind">constrained · not a game</span>
       <div class="proj-media">
         <div class="screen">
           <div class="screen-bar"><span>eduvision.app</span><span>▢ ✕</span></div>
@@ -154,8 +165,8 @@
         <p class="meta"><span>2026 – now</span><span>with UXGD</span><span>Unity 6 · C#</span></p>
         <h3>EduVision</h3>
         <p>
-          An app for discovering and collecting insect species. I handle the behind-the-scenes side:
-          a Unity editor tool for entering and checking species data, and the export that packs each
+          An educational app for identifying and collecting insects. I handle the behind-the-scenes side:
+          a Unity editor tool for entering and checking species data, and an export that packs each
           species into <code>species.json</code>, a <code>.glb</code> model and audio, so the viewer can load it directly.
         </p>
         <p>
@@ -165,40 +176,58 @@
         </p>
         <a class="watch" href="https://youtu.be/DFv7rMDXKfA" target="_blank" rel="noopener">▶ watch on YouTube</a>
       </div>
+      <ol class="case">
+        <li><b>The problem</b>None of us knew much about insects, and there were few references to tell us how many species to cover or how to group them.</li>
+        <li><b>The constraint</b>Insect identification ran through an external API with a limited number of calls per key, inside a school timeline with a cross-disciplinary team.</li>
+        <li><b>What we tested</b>We tested identification on specific insect families first, to check accuracy before widening the scope.</li>
+        <li class="fail"><b>What failed</b>We kept running out of API calls. Each key ran dry before we could finish the rounds of testing we needed.</li>
+        <li><b>What we changed</b>We set up API keys under several team accounts and spread our testing across them, so testing didn't stall.</li>
+        <li><b>What happened</b>By keeping communication tight across programmers and designers, we built an app with insect identification, card collection, stickers, gamified progression, a 3D model viewer and "learn more" pages for each species.</li>
+      </ol>
     </article>
 
-    <!-- LTA -->
-    <article class="proj yellow small">
+    <!-- CHANGI -->
+    <article class="proj yellow">
+      <span class="kind">skill: workflow automation · not a game</span>
       <div class="proj-text">
-        <p class="meta"><span>2023</span><span>diploma FYP</span><span>team of 5 · Unity VR</span></p>
-        <h3>VR safety training for LTA</h3>
+        <p class="meta"><span>Sep 2023 – Feb 2024</span><span>internship</span><span>Power Automate · UiPath</span></p>
+        <h3>Changi Airport Group: automating the boring stuff</h3>
         <p>
-          A VR prototype to train Land Transport Authority staff on two safety operations exercises.
-          I made the road marking assets, built the Path 1 scenario's drag-and-drop table with a
-          top-down camera, and ran user research sessions.
+          As a robotic process automation (RPA) developer intern, I designed and deployed 5 automations
+          across SharePoint, Teams, Planner and FormSG, using SharePoint HTTP requests to connect
+          enterprise apps that didn't talk to each other.
         </p>
       </div>
-      <div class="vr-badge" aria-hidden="true"><span>VR</span></div>
+      <div class="big-stat">
+        <p class="big">~40<small>hrs / week</small></p>
+        <p class="big-cap">of manual work saved</p>
+      </div>
+      <ol class="case">
+        <li><b>The problem</b>Teams were spending hours every week on repetitive manual workflows across SharePoint, Teams, Planner and FormSG.</li>
+        <li><b>The constraint</b>Everything had to run inside the existing Microsoft 365 setup, and each fix had to work for stakeholders from different teams, not just one.</li>
+        <li><b>What I did</b>I triaged each workflow problem with the stakeholders who owned it, then built and deployed an automation for it with Power Automate or UiPath.</li>
+        <li><b>What happened</b>Five automations went live, saving about 40 hours of manual work per week.</li>
+      </ol>
     </article>
   </section>
 
-  <!-- AUTOMATION -->
+  <!-- OTHER WORK -->
   <section class="automation">
-    <h2 class="section-title"><span class="sticker pink">before games: automation</span></h2>
+    <h2 class="section-title"><span class="sticker pink">more work</span></h2>
     <div class="jobs">
-      <article class="job blue">
-        <p class="big">~40<small>hrs / week</small></p>
-        <p class="big-cap">of manual work saved</p>
-        <h3>Changi Airport Group</h3>
-        <p class="role">RPA developer intern · Sep 2023 – Feb 2024</p>
-        <p>I shipped 5 Power Automate and UiPath flows across SharePoint, Teams, Planner and FormSG.</p>
-      </article>
       <article class="job mint">
         <p class="big">5h<small>→ 15 min</small></p>
         <p class="big-cap">monthly processing time</p>
         <h3>Monetary Authority of Singapore</h3>
         <p class="role">IT contract staff, RPA &amp; VBA · Apr – Jul 2024</p>
-        <p>I automated a monthly job of 100+ data entries, and cleaned up the existing scripts while I was there.</p>
+        <p>I automated a monthly job of 100+ data entries with VBA and RPA, and cleaned up the existing scripts while I was there.</p>
+      </article>
+      <article class="job blue">
+        <p class="big">2<small>VR exercises</small></p>
+        <p class="big-cap">for LTA safety training</p>
+        <h3>VR safety training for LTA</h3>
+        <p class="role">Diploma final year project · 2023 · Unity, C#</p>
+        <p>In a team of 5, I built interactive VR scenarios for the Land Transport Authority, made the road marking assets, and built the Path 1 drag-and-drop table with a top-down camera.</p>
       </article>
     </div>
   </section>

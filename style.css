@@ -256,3 +256,39 @@ main, .top { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
   .foot { padding-top: 64px; }
   .big-btn { font-size: 15px; padding: 12px 16px; }
 }
+
+/* ---------- case studies ---------- */
+.work-intro { font-size: 18px; color: var(--soft); max-width: 640px; margin: -20px 0 50px; }
+.kind {
+  position: absolute; top: -18px; left: 28px; z-index: 2;
+  font: 700 13px "Space Mono", monospace; text-transform: uppercase; letter-spacing: .04em;
+  background: var(--ink); color: var(--cream); padding: 6px 14px; border-radius: 999px; transform: rotate(-2deg);
+}
+.case {
+  grid-column: 1 / -1; list-style: none; counter-reset: step; padding: 0; margin: 10px 0 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+}
+.case li {
+  counter-increment: step; position: relative; background: #fff; border: var(--line); border-radius: 14px;
+  padding: 16px 16px 16px 16px; font-size: 15px; line-height: 1.55; box-shadow: 4px 4px 0 var(--ink);
+}
+.case li b {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 6px;
+  font: 800 18px "Bricolage Grotesque", sans-serif;
+}
+.case li b::before {
+  content: counter(step); display: grid; place-items: center; width: 26px; height: 26px; flex: none;
+  border: 2px solid var(--ink); border-radius: 50%; font: 700 13px "Space Mono", monospace; background: var(--yellow);
+}
+.proj.red .case li b::before { background: var(--pink); }
+.proj.green .case li b::before { background: var(--mint); }
+.case li.fail { background: #ffe9e3; }
+.proj.yellow .case { grid-template-columns: repeat(2, 1fr); }
+.proj.yellow { grid-template-columns: 1.4fr 1fr; }
+.big-stat { text-align: center; }
+.proj.flip .case { order: 3; }
+@media (max-width: 820px) {
+  .case, .proj.yellow .case { grid-template-columns: 1fr; }
+  .proj.yellow { grid-template-columns: 1fr; }
+  .kind { left: 16px; font-size: 11px; }
+}
