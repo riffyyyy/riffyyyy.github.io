@@ -42,11 +42,8 @@
     <!-- HOLLOWS -->
     <article class="proj">
       <div class="proj-media">
-        <figure class="shot main"><img src="images/hollows-1.png" alt="Hollows gameplay screenshot" loading="lazy"></figure>
-        <div class="shot-row">
-          <figure class="shot"><img src="images/hollows-2.png" alt="Hollows screenshot" loading="lazy"></figure>
-          <figure class="shot"><img src="images/hollows-3.png" alt="Hollows screenshot" loading="lazy"></figure>
-        </div>
+        <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bxp67jQr5Dw?rel=0" title="Hollows gameplay video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <a class="watch" href="https://youtu.be/bxp67jQr5Dw" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
       <div class="proj-text">
         <p class="meta">2025–26 · team of 6 · C++20, CMake</p>
@@ -68,10 +65,8 @@
     <!-- EDUVISION -->
     <article class="proj flip">
       <div class="proj-media">
-        <figure class="shot main"><img src="images/eduvision-1.png" alt="EduVision app screenshot" loading="lazy"></figure>
-        <div class="shot-row">
-          <figure class="shot"><img src="images/eduvision-2.png" alt="EduVision editor tool" loading="lazy"></figure>
-        </div>
+        <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/DFv7rMDXKfA?rel=0" title="EduVision app video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <a class="watch" href="https://youtu.be/DFv7rMDXKfA" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
       <div class="proj-text">
         <p class="meta">2026 – now · with UXGD students · Unity 6, C#</p>
@@ -91,10 +86,7 @@
     </article>
 
     <!-- LTA VR -->
-    <article class="proj">
-      <div class="proj-media">
-        <figure class="shot main"><img src="images/lta-vr-1.png" alt="LTA VR safety training scenario" loading="lazy"></figure>
-      </div>
+    <article class="proj no-media">
       <div class="proj-text">
         <p class="meta">2023 · diploma final year project · team of 5 · Unity</p>
         <h3>VR safety training for LTA</h3>
@@ -157,18 +149,5 @@
   </p>
 </footer>
 
-<script>
-  // If a screenshot hasn't been added yet, hide its frame instead of showing a broken image.
-  document.querySelectorAll('.shot img').forEach(function (img) {
-    function gone() {
-      var fig = img.closest('.shot'); fig.remove();
-      document.querySelectorAll('.shot-row').forEach(function (r) { if (!r.children.length) r.remove(); });
-      document.querySelectorAll('.proj-media').forEach(function (m) {
-        if (!m.querySelector('.shot')) { m.closest('.proj').classList.add('no-media'); m.remove(); }
-      });
-    }
-    if (img.complete && img.naturalWidth === 0) gone(); else img.addEventListener('error', gone);
-  });
-</script>
 </body>
 </html>
