@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rifqah Batrisya · Portfolio</title>
+  <meta name="description" content="Rifqah Batrisya — Computer Science (Interactive Media & Game Development) student. Game development, Unity tooling, custom C++ engines and workflow automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237c5cff'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='white'>RB</text></svg>">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">rifqah<span>.dev</span></a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <p class="eyebrow mono">&gt; hello, world_</p>
+      <h1>Rifqah Batrisya</h1>
+      <p class="tagline">I build <strong>games</strong>, <strong>tools</strong> and <strong>automations</strong>, from a custom C++ game engine to Unity editor pipelines to RPA bots that free up hours of manual work every week.</p>
+      <p class="sub">Year 3 BSc Computer Science in Interactive Media &amp; Game Development · DigiPen Institute of Technology Singapore × SIT</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://www.linkedin.com/in/rifqah-nazarudi" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/riffyyyy" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <dl class="stats">
+        <div><dt>~40 hrs</dt><dd>manual work saved per week with RPA</dd></div>
+        <div><dt>5h → 15m</dt><dd>monthly processing cut with VBA &amp; RPA</dd></div>
+        <div><dt>3</dt><dd>team game / app projects shipped</dd></div>
+      </dl>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap section">
+      <h2><span class="num mono">01</span> Projects</h2>
+
+      <article class="project featured">
+        <div class="project-head">
+          <div>
+            <h3>Hollows</h3>
+            <p class="role">Project Manager · Programmer · UX Design</p>
+          </div>
+          <span class="date mono">Sep 2025 – Apr 2026</span>
+        </div>
+        <p class="lede">A Windows game built on our team's own game engine, written from scratch in C++. Team of 6.</p>
+        <ul>
+          <li>Led the team of 6 as Project Manager and also acted as the team's UX/game designer, taking the project from engine to finished game.</li>
+          <li>Built engine foundations including a math library (Math Utilities, Matrix3x3, Vector2D).</li>
+          <li>Developed gameplay systems: collectibles, inventory management, and enemy AI using <strong>finite state machines</strong> and <strong>A* pathfinding</strong>.</li>
+          <li>Designed a data-driven event system with JSON serialization, so designers can change gameplay events without recompiling.</li>
+        </ul>
+        <div class="tags"><span>C++20</span><span>CMake</span><span>Visual Studio</span><span>Custom Engine</span><span>FSM AI</span><span>A*</span></div>
+      </article>
+
+      <div class="grid">
+        <article class="project">
+          <div class="project-head">
+            <div>
+              <h3>EduVision App</h3>
+              <p class="role">Programmer</p>
+            </div>
+            <span class="date mono">Sep 2026 – Present</span>
+          </div>
+          <p class="lede">An authoring tool and runtime export for an insect species app, built with a cross-disciplinary UXGD team.</p>
+          <ul>
+            <li>Built a Unity editor tooling pipeline for authoring and validating species data, which reduces data-entry errors before export.</li>
+            <li>Defined a per-species export format (<code>species.json</code> + <code>.glb</code> + audio) that the runtime viewer loads directly.</li>
+            <li>Owned collection data and storage: a single C# store keyed by scientific name, with 10 insect types and 3 rarity tiers, that recovers from corrupt saves.</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>Unity 6</span><span>Editor Tooling</span><span>Jira</span><span>Git</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div>
+              <h3>LTA VR Safety Training</h3>
+              <p class="role">Developer &amp; User Researcher · Diploma FYP</p>
+            </div>
+            <span class="date mono">2023</span>
+          </div>
+          <p class="lede">A VR training prototype for Land Transport Authority safety operations. Team of 5.</p>
+          <ul>
+            <li>Developed interactive VR scenarios for 2 safety-operations exercises.</li>
+            <li>Created the road marking assets and built the Path 1 scenario's drag-and-drop table with a top-down camera.</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>Unity</span><span>VR</span><span>User Research</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="wrap section">
+      <h2><span class="num mono">02</span> Experience</h2>
+      <ol class="timeline">
+        <li>
+          <span class="date mono">Apr 2024 – Jul 2024</span>
+          <h3>IT Contract Staff (RPA &amp; VBA Automation)</h3>
+          <p class="org">Monetary Authority of Singapore</p>
+          <ul>
+            <li>Automated the monthly processing of 100+ data entries with VBA and RPA, cutting the time from <strong>5 hours to 15 minutes</strong>.</li>
+            <li>Updated, debugged and optimised existing code, and took part in project planning meetings with the team.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="date mono">Sep 2023 – Feb 2024</span>
+          <h3>RPA Developer Intern</h3>
+          <p class="org">Changi Airport Group</p>
+          <ul>
+            <li>Designed and deployed <strong>5 RPA solutions</strong> with Power Automate and UiPath, saving about <strong>40 hours of manual work per week</strong>.</li>
+            <li>Built workflows across Microsoft 365 (SharePoint, Teams, Planner, FormSG), using SharePoint HTTP operations to connect enterprise apps.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3 class="subhead">Education</h3>
+      <div class="edu">
+        <div>
+          <p class="edu-title">BSc Computer Science in Interactive Media &amp; Game Development</p>
+          <p class="org">DigiPen Institute of Technology Singapore · Singapore Institute of Technology</p>
+          <span class="date mono">Sep 2024 – Present</span>
+        </div>
+        <div>
+          <p class="edu-title">Diploma in Aviation Management</p>
+          <p class="org">Republic Polytechnic</p>
+          <span class="date mono">Apr 2021 – May 2024</span>
+        </div>
+      </div>
+
+      <h3 class="subhead">Awards</h3>
+      <ul class="awards">
+        <li><strong>Edusave Skills Award</strong>, Ministry of Education <span class="mono">(2024)</span></li>
+        <li><strong>Honorary, Project Give Flight</strong>, AIRBUS Asia Training Centre <span class="mono">(2022)</span></li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="wrap section">
+      <h2><span class="num mono">03</span> Skills</h2>
+      <div class="skills">
+        <div class="skill-card"><h3>Languages</h3><div class="tags"><span>C++</span><span>C#</span><span>C</span></div></div>
+        <div class="skill-card"><h3>Engines</h3><div class="tags"><span>Unity</span><span>Unreal</span><span>Custom C++ engine</span></div></div>
+        <div class="skill-card"><h3>Automation (RPA)</h3><div class="tags"><span>UiPath</span><span>Power Automate</span><span>Power Platform</span><span>Excel VBA</span></div></div>
+        <div class="skill-card"><h3>Tools &amp; Workflow</h3><div class="tags"><span>Git</span><span>Jira</span><span>CMake</span><span>Visual Studio</span><span>M365 / SharePoint</span></div></div>
+        <div class="skill-card wide"><h3>Also</h3><p>Debugging and optimising existing code, documenting workflows and technical specs, and AI-assisted prototyping, with all output reviewed and tested.</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap section contact">
+      <h2><span class="num mono">04</span> Let's talk</h2>
+      <p>I'm open to internships, collaborations and game-jam teams, so feel free to reach out.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:rifrif250504@gmail.com">rifrif250504@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/rifqah-nazarudi" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/riffyyyy" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer mono">© <span id="year">2026</span> Rifqah Batrisya · built with plain HTML &amp; CSS</footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement, btn = document.getElementById('themeToggle');
+      try { var s = localStorage.getItem('theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+      btn.addEventListener('click', function () {
+        var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark'
+                 : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var next = dark ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
