@@ -89,8 +89,9 @@ main, .top { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
 .pc-stats { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; margin: 0 0 14px; }
 .pc-stats dt { color: #8a8278; }
 .pc-stats dd { margin: 0; font-weight: 700; }
-.pc-bars div { display: grid; grid-template-columns: 76px 1fr; align-items: center; margin-bottom: 6px; }
-.pc-bars i { height: 12px; border: 2px solid var(--ink); border-radius: 4px; background: linear-gradient(90deg, var(--red) var(--v), #fff var(--v)); }
+.pc-loot { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.pc-loot li { border: 2px solid var(--ink); border-radius: 8px; padding: 6px 8px; line-height: 1.3; background: #fff8ec; }
+.pc-loot b { display: block; font: 800 22px "Bricolage Grotesque", sans-serif; color: var(--red); }
 .pc-quest { margin: 12px 0 0; padding-top: 10px; border-top: 2px dashed var(--ink); }
 .pc-quest b { color: var(--red); }
 
