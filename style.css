@@ -283,7 +283,6 @@ main, .top { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
 .proj.red .case li b::before { background: var(--pink); }
 .proj.green .case li b::before { background: var(--mint); }
 .case li.fail { background: #ffe9e3; }
-.proj.yellow .case { grid-template-columns: repeat(2, 1fr); }
 .proj.yellow { grid-template-columns: 1.4fr 1fr; }
 .big-stat { text-align: center; }
 .proj.flip .case { order: 3; }
