@@ -7,146 +7,246 @@
   <meta name="description" content="Rifqah Batrisya: game programmer and CS student at DigiPen Singapore × SIT. Custom C++ engines, Unity tools and workflow automation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Caveat:wght@600&family=Karla:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.svg">
 </head>
 <body>
 
+<!-- reusable doodles -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 40 40"><path d="M20 2 L24 15 L38 16 L27 24 L31 38 L20 30 L9 38 L13 24 L2 16 L16 15 Z" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/></symbol>
+    <symbol id="spark" viewBox="0 0 40 40"><path d="M20 2 C21 14 26 19 38 20 C26 21 21 26 20 38 C19 26 14 21 2 20 C14 19 19 14 20 2 Z" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/></symbol>
+    <symbol id="arrow" viewBox="0 0 90 60"><path d="M4 8 C30 4 60 18 70 48 M58 40 L70 50 L78 36" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
 <header class="top">
-  <a href="#" class="name">Rifqah Batrisya</a>
+  <a href="#" class="name-tag">rifqah<span>.</span></a>
   <nav>
     <a href="#work">work</a>
     <a href="#about">about</a>
-    <a href="mailto:rifrif250504@gmail.com">email</a>
+    <a href="mailto:rifrif250504@gmail.com" class="nav-hi">say hi</a>
   </nav>
 </header>
 
 <main>
 
-  <section class="intro">
-    <p class="hi">Hi! I'm Rifqah.</p>
-    <h1>I make games, and the tools that help make them.</h1>
-    <p class="lead">
-      I'm in my third year of Computer Science (Interactive Media &amp; Game Development)
-      at DigiPen Singapore × SIT. Lately that's meant building a C++ engine from scratch
-      with five teammates, and writing Unity editor tools for an insect-collecting app.
-      Before games I automated office work at Changi Airport Group and MAS, which is
-      where I got a bit obsessed with making tedious things disappear.
-    </p>
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="doodle d1"><use href="#star" fill="#ffd23f"/></svg>
+    <svg class="doodle d2"><use href="#spark" fill="#4cc9a6"/></svg>
+    <svg class="doodle d3"><use href="#star" fill="#ff8fab"/></svg>
+
+    <div class="hero-text">
+      <p class="hi">hi, I'm <strong>Rifqah</strong> 👋</p>
+      <h1>
+        I make <span class="hl yellow">games</span>,<br>
+        and the <span class="circled">tools
+          <svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M12 44 C10 16 70 6 120 8 C170 10 196 26 190 46 C184 68 120 76 70 72 C30 69 6 60 18 30" fill="none" stroke="#ff5a36" stroke-width="5" stroke-linecap="round"/></svg>
+        </span><br>
+        that help <span class="hl blue">make them</span>.
+      </h1>
+      <p class="lead">
+        Third-year Computer Science (Interactive Media &amp; Game Development) student at
+        <strong>DigiPen Singapore × SIT</strong>. Lately I've been building a C++ engine from scratch with five
+        teammates and writing Unity editor tools for an insect-collecting app. Before games I automated
+        office work at Changi Airport Group and MAS, which is where I got a bit obsessed with making
+        tedious things disappear.
+      </p>
+      <div class="hero-cta">
+        <a class="btn red" href="#work">see my work ↓</a>
+        <a class="btn" href="https://www.linkedin.com/in/rifqah-nazarudi" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/riffyyyy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <aside class="player-card" aria-label="Player card">
+      <div class="pc-head"><span>PLAYER 1</span><span class="blink">● online</span></div>
+      <div class="pc-avatar" aria-hidden="true">R</div>
+      <p class="pc-name">Rifqah Batrisya</p>
+      <dl class="pc-stats">
+        <dt>class</dt><dd>Programmer / PM</dd>
+        <dt>level</dt><dd>Year 3, IMGD</dd>
+        <dt>base</dt><dd>Singapore 🇸🇬</dd>
+        <dt>special</dt><dd>automating boring stuff</dd>
+      </dl>
+      <div class="pc-bars">
+        <div><span>C++</span><i style="--v:88%"></i></div>
+        <div><span>C#</span><i style="--v:85%"></i></div>
+        <div><span>RPA</span><i style="--v:92%"></i></div>
+        <div><span>teamwork</span><i style="--v:95%"></i></div>
+      </div>
+      <p class="pc-quest">current quest: <b>EduVision</b></p>
+      <span class="note n-card">that's me!</span>
+    </aside>
   </section>
 
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>C++</span><svg><use href="#spark" fill="#ffd23f"/></svg>
+      <span>Unity</span><svg><use href="#spark" fill="#ff8fab"/></svg>
+      <span>C#</span><svg><use href="#spark" fill="#4cc9a6"/></svg>
+      <span>Custom engines</span><svg><use href="#spark" fill="#ffd23f"/></svg>
+      <span>A* pathfinding</span><svg><use href="#spark" fill="#ff8fab"/></svg>
+      <span>UiPath</span><svg><use href="#spark" fill="#4cc9a6"/></svg>
+      <span>Power Automate</span><svg><use href="#spark" fill="#ffd23f"/></svg>
+      <span>Unreal</span><svg><use href="#spark" fill="#ff8fab"/></svg>
+      <span>C++</span><svg><use href="#spark" fill="#ffd23f"/></svg>
+      <span>Unity</span><svg><use href="#spark" fill="#ff8fab"/></svg>
+      <span>C#</span><svg><use href="#spark" fill="#4cc9a6"/></svg>
+      <span>Custom engines</span><svg><use href="#spark" fill="#ffd23f"/></svg>
+      <span>A* pathfinding</span><svg><use href="#spark" fill="#ff8fab"/></svg>
+      <span>UiPath</span><svg><use href="#spark" fill="#4cc9a6"/></svg>
+      <span>Power Automate</span><svg><use href="#spark" fill="#ffd23f"/></svg>
+      <span>Unreal</span><svg><use href="#spark" fill="#ff8fab"/></svg>
+    </div>
+  </div>
+
+  <!-- WORK -->
   <section id="work" class="work">
-    <h2 class="label">Selected work</h2>
+    <h2 class="section-title"><span class="sticker yellow">selected work</span></h2>
 
     <!-- HOLLOWS -->
-    <article class="proj">
+    <article class="proj red">
       <div class="proj-media">
-        <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bxp67jQr5Dw?rel=0" title="Hollows gameplay video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <a class="watch" href="https://youtu.be/bxp67jQr5Dw" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+        <div class="screen">
+          <div class="screen-bar"><span>hollows.exe</span><span>▢ ✕</span></div>
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bxp67jQr5Dw?rel=0" title="Hollows gameplay video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </div>
+        <span class="note n-hollows">built on our own engine!</span>
+        <svg class="arrow a-hollows"><use href="#arrow"/></svg>
       </div>
       <div class="proj-text">
-        <p class="meta">2025–26 · team of 6 · C++20, CMake</p>
+        <p class="meta"><span>2025–26</span><span>team of 6</span><span>C++20 · CMake</span></p>
         <h3>Hollows</h3>
         <p>
-          A Windows game running on our own engine. No Unity and no Unreal, everything
-          down to the math library (vectors, 3×3 matrices). I was project manager,
-          one of the programmers, and the person the team came to for UX and design calls.
+          A Windows game running on our own engine. No Unity and no Unreal, everything down to the
+          math library (vectors, 3×3 matrices). I was project manager, one of the programmers, and
+          the person the team came to for UX and design calls.
         </p>
-        <p>The parts I'm proudest of:</p>
-        <ul>
+        <p class="proud">The parts I'm proudest of:</p>
+        <ul class="checks">
           <li>Enemy AI built on finite state machines with A* pathfinding</li>
           <li>Collectibles and the inventory system</li>
           <li>A JSON-driven event system, so designers could change gameplay events without waiting on a recompile</li>
         </ul>
+        <a class="watch" href="https://youtu.be/bxp67jQr5Dw" target="_blank" rel="noopener">▶ watch on YouTube</a>
       </div>
     </article>
 
     <!-- EDUVISION -->
-    <article class="proj flip">
+    <article class="proj green flip">
       <div class="proj-media">
-        <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/DFv7rMDXKfA?rel=0" title="EduVision app video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <a class="watch" href="https://youtu.be/DFv7rMDXKfA" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+        <div class="screen">
+          <div class="screen-bar"><span>eduvision.app</span><span>▢ ✕</span></div>
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/DFv7rMDXKfA?rel=0" title="EduVision app video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </div>
+        <span class="note n-edu">gotta catch 'em all 🐞</span>
       </div>
       <div class="proj-text">
-        <p class="meta">2026 – now · with UXGD students · Unity 6, C#</p>
+        <p class="meta"><span>2026 – now</span><span>with UXGD</span><span>Unity 6 · C#</span></p>
         <h3>EduVision</h3>
         <p>
-          An app for discovering and collecting insect species. I handle the
-          behind-the-scenes side: a Unity editor tool for entering and checking species data,
-          and the export that packs each species into <code>species.json</code>, a <code>.glb</code> model
-          and audio, so the viewer can load it directly.
+          An app for discovering and collecting insect species. I handle the behind-the-scenes side:
+          a Unity editor tool for entering and checking species data, and the export that packs each
+          species into <code>species.json</code>, a <code>.glb</code> model and audio, so the viewer can load it directly.
         </p>
         <p>
           I also own the collection save data. Each species is stored once by scientific name
-          (scanning it again just bumps a counter), sorted into 10 insect types and 3 rarities,
+          (scanning it again just bumps a counter), sorted into <b>10 insect types</b> and <b>3 rarities</b>,
           and a corrupted save file won't wipe your progress.
         </p>
+        <a class="watch" href="https://youtu.be/DFv7rMDXKfA" target="_blank" rel="noopener">▶ watch on YouTube</a>
       </div>
     </article>
 
-    <!-- LTA VR -->
-    <article class="proj no-media">
+    <!-- LTA -->
+    <article class="proj yellow small">
       <div class="proj-text">
-        <p class="meta">2023 · diploma final year project · team of 5 · Unity</p>
+        <p class="meta"><span>2023</span><span>diploma FYP</span><span>team of 5 · Unity VR</span></p>
         <h3>VR safety training for LTA</h3>
         <p>
-          A VR prototype to train Land Transport Authority staff on two safety operations
-          exercises. I made the road marking assets, built the Path 1 scenario's
-          drag-and-drop table with a top-down camera, and ran user research sessions.
+          A VR prototype to train Land Transport Authority staff on two safety operations exercises.
+          I made the road marking assets, built the Path 1 scenario's drag-and-drop table with a
+          top-down camera, and ran user research sessions.
         </p>
       </div>
+      <div class="vr-badge" aria-hidden="true"><span>VR</span></div>
     </article>
   </section>
 
-  <section class="side-work">
-    <h2 class="label">Before games: automation</h2>
+  <!-- AUTOMATION -->
+  <section class="automation">
+    <h2 class="section-title"><span class="sticker pink">before games: automation</span></h2>
     <div class="jobs">
-      <div>
-        <p class="meta">Sep 2023 – Feb 2024</p>
+      <article class="job blue">
+        <p class="big">~40<small>hrs / week</small></p>
+        <p class="big-cap">of manual work saved</p>
         <h3>Changi Airport Group</h3>
-        <p class="role">RPA developer intern</p>
-        <p>I shipped 5 Power Automate and UiPath flows across SharePoint, Teams, Planner and FormSG. Together they save the team about 40 hours a week.</p>
-      </div>
-      <div>
-        <p class="meta">Apr – Jul 2024</p>
+        <p class="role">RPA developer intern · Sep 2023 – Feb 2024</p>
+        <p>I shipped 5 Power Automate and UiPath flows across SharePoint, Teams, Planner and FormSG.</p>
+      </article>
+      <article class="job mint">
+        <p class="big">5h<small>→ 15 min</small></p>
+        <p class="big-cap">monthly processing time</p>
         <h3>Monetary Authority of Singapore</h3>
-        <p class="role">IT contract staff, RPA &amp; VBA</p>
-        <p>I automated a monthly 100+ entry data job that took 5 hours down to 15 minutes, and cleaned up the existing scripts while I was there.</p>
-      </div>
+        <p class="role">IT contract staff, RPA &amp; VBA · Apr – Jul 2024</p>
+        <p>I automated a monthly job of 100+ data entries, and cleaned up the existing scripts while I was there.</p>
+      </article>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="about">
-    <h2 class="label">About</h2>
+    <h2 class="section-title"><span class="sticker mint">about me</span></h2>
     <div class="about-grid">
-      <div>
+      <div class="sticky-note">
         <p>
-          I took a slightly unusual route into CS. I did a Diploma in Aviation Management at
-          Republic Polytechnic (and got an honorary mention at Airbus's Project Give Flight),
-          then switched lanes to games at DigiPen.
-          I like the part of game dev where systems meet people: AI that feels fair,
-          tools that designers actually want to use.
+          I took a slightly unusual route into CS. I did a Diploma in <b>Aviation Management</b> at
+          Republic Polytechnic (and got an honorary mention at Airbus's Project Give Flight), then switched
+          lanes to games at DigiPen. ✈️ → 🎮
         </p>
-        <p>Edusave Skills Award, 2024.</p>
+        <p>
+          I like the part of game dev where systems meet people: AI that feels fair, and tools that
+          designers actually want to use.
+        </p>
+        <p class="award">🏆 Edusave Skills Award, 2024</p>
       </div>
-      <dl class="toolbox">
-        <dt>Write</dt><dd>C++, C#, C, Excel VBA</dd>
-        <dt>Engines</dt><dd>Unity, Unreal, our own C++ engine</dd>
-        <dt>Automate</dt><dd>UiPath, Power Automate, M365</dd>
-        <dt>Day to day</dt><dd>Git, Jira, CMake, Visual Studio</dd>
-      </dl>
+
+      <div class="inventory">
+        <p class="inv-title">inventory <span>[ press I ]</span></p>
+        <ul class="slots">
+          <li class="c-red"><b>C++</b><i>language</i></li>
+          <li class="c-blue"><b>C#</b><i>language</i></li>
+          <li class="c-yellow"><b>C</b><i>language</i></li>
+          <li class="c-mint"><b>Unity</b><i>engine</i></li>
+          <li class="c-pink"><b>Unreal</b><i>engine</i></li>
+          <li class="c-red"><b>Own engine</b><i>legendary</i></li>
+          <li class="c-blue"><b>UiPath</b><i>automation</i></li>
+          <li class="c-yellow"><b>Power Automate</b><i>automation</i></li>
+          <li class="c-mint"><b>Excel VBA</b><i>automation</i></li>
+          <li class="c-pink"><b>Git</b><i>tool</i></li>
+          <li class="c-red"><b>Jira</b><i>tool</i></li>
+          <li class="c-blue"><b>CMake</b><i>tool</i></li>
+        </ul>
+      </div>
     </div>
   </section>
 
 </main>
 
 <footer class="foot">
-  <p>Say hi at <a href="mailto:rifrif250504@gmail.com">rifrif250504@gmail.com</a></p>
-  <p class="links">
-    <a href="https://www.linkedin.com/in/rifqah-nazarudi" target="_blank" rel="noopener">LinkedIn</a>
+  <svg class="doodle f1"><use href="#star" fill="#ffd23f"/></svg>
+  <p class="foot-big">let's make<br>something fun.</p>
+  <a class="btn red big-btn" href="mailto:rifrif250504@gmail.com">rifrif250504@gmail.com</a>
+  <p class="foot-links">
+    <a href="https://www.linkedin.com/in/rifqah-nazarudi" target="_blank" rel="noopener">LinkedIn</a> ·
     <a href="https://github.com/riffyyyy" target="_blank" rel="noopener">GitHub</a>
   </p>
+  <p class="credit">made by hand by Rifqah · 2026</p>
 </footer>
 
 </body>
