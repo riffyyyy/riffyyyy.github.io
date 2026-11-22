@@ -291,3 +291,26 @@ main, .top { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
   .proj.yellow { grid-template-columns: 1fr; }
   .kind { left: 16px; font-size: 11px; }
 }
+
+/* ---------- project groups ---------- */
+.group { display: flex; align-items: center; gap: 16px; margin: 10px 0 44px; }
+.group-tag {
+  font: 800 22px "Bricolage Grotesque", sans-serif; padding: 4px 16px; border: var(--line); border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--ink); color: #fff; white-space: nowrap;
+}
+.group-tag.red { background: var(--red); transform: rotate(-1.5deg); }
+.group-tag.blue { background: var(--blue); transform: rotate(1.5deg); }
+.group-line { flex: 1; border-top: 3px dashed var(--ink); }
+.group-count { font: 700 13px "Space Mono", monospace; color: var(--soft); white-space: nowrap; }
+.job { position: relative; }
+.cat {
+  position: absolute; top: -16px; right: 20px; font: 700 12px "Space Mono", monospace; text-transform: uppercase;
+  color: #fff; padding: 4px 12px; border: 2px solid var(--ink); border-radius: 999px;
+}
+.cat.red { background: var(--red); } .cat.blue { background: var(--blue); }
+.automation .work-intro { margin-top: -20px; }
+@media (max-width: 820px) {
+  .group { gap: 10px; margin-bottom: 36px; }
+  .group-tag { font-size: 18px; padding: 3px 12px; }
+  .group-count { display: none; }
+}
