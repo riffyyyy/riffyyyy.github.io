@@ -30,6 +30,7 @@
   <a href="#" class="name-tag">rifqah<span>.</span></a>
   <nav>
     <a href="#work">work</a>
+    <a href="#ai">AI</a>
     <a href="#about">about</a>
     <a href="mailto:rifrif250504@gmail.com" class="nav-hi">say hi</a>
   </nav>
@@ -172,7 +173,7 @@
           species into <code>species.json</code>, a <code>.glb</code> model and audio, so the viewer can load it directly.
         </p>
         <p>
-          I also own the collection save data. Each species is stored once by scientific name
+          I also own the cloud collection storage. Each species is stored once by scientific name
           (scanning it again just bumps a counter), sorted into <b>10 insect types</b> and <b>3 rarities</b>,
           and a corrupted save file won't wipe your progress.
         </p>
@@ -183,7 +184,7 @@
         <li><b>The constraint</b>Insect identification ran through an external API with a limited number of calls per key, inside a school timeline with a cross-disciplinary team.</li>
         <li><b>What we tested</b>We tested identification on specific insect families first, to check accuracy before widening the scope.</li>
         <li class="fail"><b>What failed</b>We kept running out of API calls. Each key ran dry before we could finish the rounds of testing we needed.</li>
-        <li><b>What we changed</b>We set up API keys under several team accounts and spread our testing across them, so testing didn't stall.</li>
+        <li><b>What we changed</b>Each teammate tested with their own API key, so we could spread testing across them without stalling.</li>
         <li><b>What happened</b>By keeping communication tight across programmers and designers, we built an app with insect identification, card collection, stickers, gamified progression, a 3D model viewer and "learn more" pages for each species.</li>
       </ol>
     </article>
@@ -206,6 +207,15 @@
         <p class="big">~40<small>hrs / week</small></p>
         <p class="big-cap">of manual work saved</p>
       </div>
+      <figure class="flow-fig">
+        <figcaption>One of my flows, simplified</figcaption>
+        <ol class="flow">
+          <li class="f-yellow"><b>FormSG</b><span>staff submit a form</span></li>
+          <li class="f-red"><b>My automation</b><span>picks up each new response</span></li>
+          <li class="f-blue"><b>SharePoint list</b><span>updated automatically, always current</span></li>
+          <li class="f-mint"><b>Teams</b><span>posts a notification to the group chat</span></li>
+        </ol>
+      </figure>
       <ol class="case">
         <li><b>The problem</b>Teams were spending hours every week on repetitive manual workflows across SharePoint, Teams, Planner and FormSG.</li>
         <li><b>The constraint</b>Everything had to run inside the existing Microsoft 365 setup, and each fix had to work for stakeholders from different teams, not just one.</li>
@@ -215,6 +225,50 @@
         <li><b>What happened</b>Five automations went live, saving about 40 hours of manual work per week.</li>
       </ol>
     </article>
+  </section>
+
+  <!-- AI -->
+  <section id="ai" class="ai">
+    <h2 class="section-title"><span class="sticker blue">how I work with AI</span></h2>
+    <p class="work-intro">I use ChatGPT, Claude, GitHub Copilot and Microsoft Copilot to debug, prototype and draft documentation. I don't trust anything I haven't checked: I build my own test sets, compare results, review the code, and test on more than one machine.</p>
+
+    <article class="ai-feature">
+      <div class="ai-text">
+        <p class="meta"><span>EduVision</span><span>AI inside the product</span></p>
+        <h3>Identifying insects from a photo</h3>
+        <p>
+          EduVision identifies insects using Kindwise's image-recognition AI. Photos go through our own
+          proxy server, so API keys never sit on users' phones. When the AI is confident, the match saves
+          straight to the collection. When it isn't, the user makes the call. Any species description
+          written by AI is labelled as AI-written.
+        </p>
+        <p class="mine">My part: the authoring tool and export, and the cloud collection storage that matches are saved into.</p>
+      </div>
+      <ol class="flow ai-flow">
+        <li class="f-yellow"><b>Phone</b><span>takes a photo</span></li>
+        <li class="f-blue"><b>Our proxy</b><span>keeps the API key server-side</span></li>
+        <li class="f-red"><b>Kindwise AI</b><span>suggests species with a confidence score</span></li>
+        <li class="f-mint split"><b>Confidence check</b><span><em>0.8 or higher:</em> saves automatically<br><em>below 0.8:</em> "Is it one of these?"</span></li>
+      </ol>
+    </article>
+
+    <div class="ai-cards">
+      <article class="ai-card">
+        <p class="meta"><span>Hollows</span><span>C++</span></p>
+        <h3>Debugging with Claude</h3>
+        <p>Claude helped me track down problems in our enemy A* pathfinding. I reviewed and tested each fix myself before keeping it.</p>
+      </article>
+      <article class="ai-card fail-card">
+        <p class="meta"><span>Overseas programme</span><span>C++</span></p>
+        <h3>When AI got it wrong</h3>
+        <p>An AI-suggested optimisation for my A* pathfinder ran fast on my laptop but was slow or broken on other machines. Now I test every optimisation on several machines before I trust it.</p>
+      </article>
+      <article class="ai-card">
+        <p class="meta"><span>Changi Airport Group · MAS</span><span>Microsoft 365</span></p>
+        <h3>Copilot at work</h3>
+        <p>I used Microsoft Copilot through each organisation's Microsoft 365 work account to draft documentation for my RPA flows, and reviewed every draft myself.</p>
+      </article>
+    </div>
   </section>
 
   <!-- OTHER WORK -->

@@ -314,3 +314,45 @@ main, .top { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
   .group-tag { font-size: 18px; padding: 3px 12px; }
   .group-count { display: none; }
 }
+
+/* ---------- flow diagrams ---------- */
+.flow-fig { grid-column: 1 / -1; margin: 0; }
+.flow-fig figcaption { font: 600 24px Caveat, cursive; margin-bottom: 10px; }
+.flow { list-style: none; padding: 0; margin: 0; display: flex; align-items: stretch; gap: 34px; }
+.flow li {
+  position: relative; flex: 1; border: var(--line); border-radius: 14px; padding: 12px 14px;
+  box-shadow: 4px 4px 0 var(--ink); font-size: 14px; line-height: 1.4;
+}
+.flow li b { display: block; font: 800 18px "Bricolage Grotesque", sans-serif; margin-bottom: 2px; }
+.flow li em { font-style: normal; font-weight: 700; }
+.flow li:not(:last-child)::after {
+  content: "→"; position: absolute; right: -30px; top: 50%; transform: translateY(-50%);
+  font: 800 24px "Bricolage Grotesque", sans-serif;
+}
+.f-yellow { background: var(--yellow); } .f-red { background: #ffd3c7; }
+.f-blue { background: #cfe0ff; } .f-mint { background: #c9f1e3; }
+
+/* ---------- AI section ---------- */
+.ai { padding: 70px 0 40px; }
+.sticker.blue { background: var(--blue); color: #fff; transform: rotate(1.5deg); }
+.ai-feature {
+  background: #e7efff; border: var(--line); border-radius: 24px; padding: 34px; box-shadow: 10px 10px 0 var(--ink);
+  display: grid; gap: 28px; margin-bottom: 40px;
+}
+.ai-feature h3 { font-size: clamp(28px, 3.6vw, 40px); margin-bottom: 12px; }
+.ai-feature p { margin: 0 0 12px; max-width: 760px; }
+.mine { font: 600 24px/1.2 Caveat, cursive; color: var(--red); }
+.ai-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ai-card { background: #fff; border: var(--line); border-radius: 18px; padding: 22px; box-shadow: var(--pop); }
+.ai-card:nth-child(1) { transform: rotate(-1deg); }
+.ai-card:nth-child(3) { transform: rotate(1deg); }
+.ai-card h3 { font-size: 22px; margin-bottom: 8px; }
+.ai-card p:last-child { margin: 0; }
+.fail-card { background: #ffe9e3; }
+
+@media (max-width: 820px) {
+  .flow { flex-direction: column; gap: 30px; }
+  .flow li:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -32px; transform: translateX(-50%); }
+  .ai-feature { padding: 20px; box-shadow: 6px 6px 0 var(--ink); }
+  .ai-cards { grid-template-columns: 1fr; }
+}
